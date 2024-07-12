@@ -5,7 +5,7 @@ export default function ExerciseListItem({item}) {
       <View style={styles.exerciseContainer}>
               <Text style={styles.exerciseName}>{item.name}</Text>
               <Text style={styles.exerciseSubtitle}>
-                {item.muscle.toUpperCase()} | {item.equipment.toUpperCase()}
+                <Text style={styles.subvalue}>{item.muscle}</Text> | <Text>{item.equipment}</Text>
                 </Text>
       </View>
     );
@@ -23,6 +23,9 @@ export default function ExerciseListItem({item}) {
      backgroundColor: '#fff',
      borderRadius:10,
      padding:10
+    },
+    subvalue: {
+      textTransform: 'capitalize'
     }
   });
   
