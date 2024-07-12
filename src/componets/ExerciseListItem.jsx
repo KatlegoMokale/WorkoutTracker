@@ -13,19 +13,32 @@ export default function ExerciseListItem({item}) {
 
   const styles = StyleSheet.create({
     exerciseName: {
-      fontSize:20, 
-      fontWeight: '500',
+      fontSize: 20,
+      fontWeight: "500",
     },
     exerciseSubtitle: {
-      color: 'dimgray'
+      color: "dimgray",
     },
     exerciseContainer: {
-     backgroundColor: '#fff',
-     borderRadius:10,
-     padding:10
+      backgroundColor: "#fff",
+      borderRadius: 10,
+      padding: 10,
+      gap:5,
+      marginHorizontal:2,
+
+      //Shadow
+      shadowColor: "#000",
+      shadowOffset: {
+        width: 0,
+        height: 1,
+      },
+      shadowOpacity: 0.2,
+      shadowRadius: 1.41,
+
+      elevation: 2,
     },
     subvalue: {
-      textTransform: 'capitalize'
-    }
+      textTransform: "capitalize",
+    },
   });
   
